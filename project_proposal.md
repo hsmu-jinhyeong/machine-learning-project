@@ -22,3 +22,8 @@ https://developer.riotgames.com/apis
 
 ## 프로젝트의 주제 
 - 티어 별 조합의 승률 분석 및 티어 분류와 추천
+
+## 데이터셋 과정
+1. RIOT 개발자 포털에 들어가서 API 신청 -> 필요한 데이터 구조화
+
+2. 각 티어에 속하는 유저의 고유번호 (summoneID) 추출 -> summonerID에 해당하는 puuid 추출 -> puuid에 해당되는 matchID 추출 (최근 10판의 기록) -> matchID에서 덱/순위/챔피언 등 필요한 정보 추출 -> 평균을 내어 덱 별 티어 순위 산정
